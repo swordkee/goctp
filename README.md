@@ -1,21 +1,18 @@
 # goctp
 上海期货交易所 ctp 接口 Golang版 (for linux64)
+ctp v6.3.19_20200423_api_tradeapi_se_linux64
 
 ## 环境
     install go
     install swig
 
 ## 构建
-    go get -u github.com/mayiweb/goctp
+    go get -u github.com/swordkee/goctp
     构建过程比较慢，需要多等一会儿
-    通过 go get 下载会自动构建，也可以手动构建，进入 github.com/mayiweb/goctp 目录 执行 make install 即可
-
-## 依赖
-    ctp 默认使用 gbk 编码，需要用到开源库转换为 utf8
-    go get -u github.com/axgle/mahonia
+    通过 go get 下载会自动构建，也可以手动构建，进入 github.com/swordkee/goctp 目录 执行 make install 即可
 
 ## 编译
-    进入 github.com/mayiweb/goctp/demo 目录，或将该目录里面的文件全部复制出来组成一个新项目
+    进入 github.com/swordkee/goctp/demo 目录，或将该目录里面的文件全部复制出来组成一个新项目
     make build
     编译成功后会在当前目录生成 ctp 可执行文件（可以修改 Makefile 文件改变生成的文件名）
     ./ctp [运行模式|默认test]
